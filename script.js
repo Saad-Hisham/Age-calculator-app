@@ -34,8 +34,8 @@ inputs[2].addEventListener('input', function (event) { // Add an input event lis
     }
     if (value < 2022) { // If the value is less than 2022
         value = value; // Keep the same value
-    } else if (value > 2022) { // If the value is greater than 2022
-        value = 2022 // Set the value to 2022
+    } else if (value > year) { // If the value is greater than 2022
+        value = year // Set the value to 2022
     }
     event.target.value = value; // Set the input value to the corrected value
 });
@@ -45,6 +45,7 @@ const now = new Date();
 let year = now.getFullYear();
 let month = now.getMonth() + 1; // add 1 because getMonth() is 0-indexed
 let day = now.getDate();
+console.log (year)
 
 function calculateAge(birthdate) { // Define a function to calculate the age based on a birthdate
     const now = new Date();
