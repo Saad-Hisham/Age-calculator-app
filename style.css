@@ -115,6 +115,10 @@ span.error-message {
     letter-spacing: 0px;
 
 }
+footer {
+    margin-top: 5rem;
+    text-align: center;
+}
 
 @media (max-width: 767px) {
     footer {
@@ -179,8 +183,4 @@ span.error-message {
     .result-block {
         margin-left: 0px;
     }
-}
-footer {
-    margin-top: 5rem;
-    text-align: center;
 }
